@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Numerología - Iniciar sesión</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="contenedor-login">
+    <h1>Numerología</h1>
+    <p class="subtitulo">Inicia sesión para continuar</p>
+
+    <form id="form-login">
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="Tu contraseña" required />
+
+      <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <p id="mensaje" class="mensaje"></p>
+
+    <div id="zona-protegida" class="zona-protegida oculto">
+      <h2>Sesión iniciada</h2>
+      <p>Bienvenido/a, <span id="nombre-usuario"></span></p>
+      <button id="btn-ver-perfil">Ver mis usuarios</button>
+      <button id="btn-cerrar-sesion">Cerrar sesión</button>
+      <pre id="resultado-protegido"></pre>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
